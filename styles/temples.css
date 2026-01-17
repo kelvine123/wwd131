@@ -46,26 +46,31 @@ header h1 {
 
 /* ===== Navigation ===== */
 
-.navigation {
-    display: none;
+nav {
+    display: flex;
+    /* Add this */
     flex-direction: column;
+    /* Mobile first */
     align-items: center;
     gap: 0.5rem;
     margin-top: 1rem;
 }
 
-.navigation a {
+nav a {
     color: white;
     text-decoration: none;
     padding: 0.4rem 0.8rem;
 }
 
-.navigation a:hover {
+nav a:hover {
     background-color: #163a5f;
     border-radius: 4px;
 }
 
-.navigation.open {
+
+/* Hamburger open state */
+
+nav.open {
     display: flex;
 }
 
