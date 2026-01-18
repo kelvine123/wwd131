@@ -1,0 +1,128 @@
+/* ===== Global Styles ===== */
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    margin: 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+
+/* ===== Header ===== */
+
+header {
+    background-color: #1f4e79;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* ===== Hamburger Button ===== */
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ===== Navigation ===== */
+
+nav {
+    display: flex;
+    /* Add this */
+    flex-direction: column;
+    /* Mobile first */
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+}
+
+nav a:hover {
+    background-color: #163a5f;
+    border-radius: 4px;
+}
+
+
+/* Hamburger open state */
+
+nav.open {
+    display: flex;
+}
+
+
+/* ===== Main Layout ===== */
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+
+/* ===== Gallery Grid ===== */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+
+/* ===== Temple Card Style ===== */
+
+figure {
+    background-color: #ffffff;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    font-weight: 700;
+}
+
+
+/* ===== Footer ===== */
+
+footer {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
