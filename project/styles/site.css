@@ -1,0 +1,295 @@
+/* ===== GENERAL STYLES ===== */
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f9ff;
+    color: #023047;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ===== HEADER ===== */
+
+header {
+    background-color: #219ebc;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* ===== Navigation ===== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+}
+
+nav a:hover {
+    background-color: #163a5f;
+    border-radius: 4px;
+}
+
+
+/* ===== Main Layout ===== */
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+
+/* ===== DONATION OPTIONS ===== */
+
+.donation-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.amount {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #e5e5e5;
+    cursor: pointer;
+}
+
+.amount.active {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.custom-amount {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+}
+
+.custom-amount input {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.donation-note {
+    font-size: 0.9rem;
+    color: #444;
+    text-align: center;
+}
+
+
+/* ===== FORM STYLING ===== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.4rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #0077b6;
+}
+
+
+/* Radio Buttons */
+
+fieldset label input[type="radio"] {
+    margin-right: 0.6rem;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    margin-top: 0.8rem;
+    cursor: pointer;
+}
+
+
+/* Divider */
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 1.5rem 0;
+}
+
+.btn-submit {
+    width: 100%;
+    max-width: 300px;
+    margin: 1.5rem auto 0;
+    display: block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #0077b6;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #005f8a;
+    transform: translateY(-1px);
+}
+
+
+/* Confirmation Message */
+
+#confirmation {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: #219ebc;
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.8rem;
+}
+
+.footer-btn {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    background-color: #111213;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-btn:hover {
+    background-color: #0096c7;
+    transform: translateY(-2px);
+}
+
+.footer-btn:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+
+/* ===== BACK ARROW ===== */
+
+.back-arrow {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+}
+
+.back-arrow:hover {
+    color: #007BFF;
+}
+
+
+/* Make confirmation messages green */
+
+#formConfirmation.thank-you,
+#donationConfirmation.thank-you {
+    color: #2e7d32;
+    /* Dark green */
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    /* ensure it behaves like a block element */
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 600px) {
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
